@@ -1,6 +1,8 @@
-.container-nav {
+.container .nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  min-width: 60px;
 }
 
 .nav__logo {
@@ -11,9 +13,6 @@
   line-height: 1.19;
   text-align: left;
   color: $main-blue;
-
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .nav__span {
@@ -22,4 +21,8 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $studio-color;
+}
+
+.menu__button {
+  display: inline-block;
 }
