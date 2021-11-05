@@ -1,25 +1,25 @@
 .modal {
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
+  height: 609px;
   padding: 15px 15px 40px 15px;
-
+  position: relative;
   background-color: $modal-bcg;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal__button {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-
-  margin: -8px;
-  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +42,8 @@
 .modal__text {
   display: block;
   margin-bottom: 12px;
-  margin-top: 10px;
-
+  margin-top: 40px;
+  max-width: 370px;
   justify-content: center;
   text-align: center;
 
@@ -55,6 +55,7 @@
 
 .fill-form {
   padding: 0 40px;
+  position: relative;
 }
 
 .fill-form__field {
@@ -123,16 +124,19 @@
 }
 
 .fill-form__accept {
-  margin-left: 10px;
-  position: relative;
   width: 100%;
-  display: flex;
-  font-size: 14px;
-  line-height: 1.71;
+  margin-left: 15px;
+  display: block;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+
   justify-content: center;
-  margin-top: 27px;
+  margin-top: 20px;
   margin-bottom: 30px;
   text-align: center;
+  align-items: center;
   color: $grey-color;
 }
 
@@ -142,18 +146,9 @@
   margin-right: 7px;
 }
 
-.fill-form__checkbox:checked + .fill-form__accept-icon {
-  border: none;
-  background-origin: border-box;
-  background-size: contain;
-  background-color: $main-blue;
-  background-image: url(../images/icon-check.svg);
-}
-
 .fill-form__accept-icon {
-  margin-top: 3px;
-  display: inline-block;
   position: absolute;
+  margin-left: 40px;
   width: 16px;
   height: 15px;
   border: 2px solid black;
@@ -165,7 +160,7 @@
     background-origin: border-box;
     background-size: contain;
     background-color: $main-blue;
-    background-image: url(../images/icon-check.svg);
+    background-image: url(../../../images/icon-check.svg);
   }
 }
 

@@ -4,17 +4,12 @@
 }
 
 .card-list__item {
-  width: 370px;
-  margin-right: 30px;
+  width: 450px;
   border: $card-border;
   transition: box-shadow 250ms $timing-function;
 
-  &:nth-child(-n + 6) {
+  &:not(:last-child) {
     margin-bottom: 30px;
-  }
-
-  &:nth-child(3n) {
-    margin-right: 0;
   }
 
   &:hover,
