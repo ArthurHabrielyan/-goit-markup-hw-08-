@@ -1,10 +1,30 @@
 .hero {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../../../images/bcg_hero.jpg);
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../../images/hero_img.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../../images/hero_img768.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../../images/bcg_hero.jpg);
+  }
   background-color: #2f303a;
   color: #ffffff;
   margin-top: 0;
