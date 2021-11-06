@@ -8,19 +8,17 @@
 }
 
 .clients-list {
-  width: 450px;
-  height: 399px;
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
+  margin-bottom: 60px;
+  justify-content: center;
 }
 
 .clients-list__item {
-  width: 210px;
+  width: calc((100% - 15 * 4) / 2);
   height: 92px;
-
-  &:nth-child(2n + 1) {
-    margin-right: 30px;
-  }
+  margin: 15px;
 }
 
 .clients-list__link {

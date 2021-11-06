@@ -3,13 +3,32 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  flex-direction: column-reverse;
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.contacts-list__item:not(:first-child) {
-  margin-top: 180px;
-  margin-bottom: 32px;
+.contacts-list__item {
+  &:not(:first-child) {
+    @media screen and (max-width: 767px) {
+      margin-top: 180px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .contacts-list__link {
@@ -22,31 +41,64 @@
 }
 
 .contacts-list__link-email {
-  color: $grey-color;
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  text-align: left;
+  @media screen and (max-width: 767px) {
+    color: $grey-color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    color: $grey-color;
+  }
 }
 .contacts-list__link-tel {
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 1.17px;
-  color: $main-blue;
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.17px;
+    color: $main-blue;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    color: $grey-color;
+  }
 }
 
 .contacts-list__icon {
-  display: none;
-  width: 20px;
-  height: 20px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 20px;
+    height: 20px;
+  }
+
   fill: $nav-contacts-color;
   transition: fill 250ms $timing-function;
 
   .contacts-list__link:hover &,
   .contacts-list__link:focus & {
     fill: $main-blue;
+  }
+}
+
+.contacts-list__icon.tel {
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
   }
 }
