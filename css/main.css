@@ -704,15 +704,15 @@ img {
   border: none;
 }
 
-.menu__button .icon-cross {
+.menu__button .icon-menu {
   display: none;
 }
 
-.menu__button.is-open .icon-cross {
+.menu__button.is-open .icon-menu {
   display: block;
 }
 
-.menu__button.is-open .icon-menu {
+.menu__button.is-open .icon-cross {
   display: none;
 }
 
@@ -890,6 +890,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 360px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -953,7 +954,6 @@ img {
 .function__icon {
   border-radius: 4px;
   background-color: #f5f4fa;
-  max-width: 480px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;

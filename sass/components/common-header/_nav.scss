@@ -34,17 +34,22 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  // &:hover,
+  // &:focus {
+  //   fill: $main-blue;
+  // }
 }
 
-.menu__button .icon-cross {
+.menu__button .icon-menu {
   display: none;
 }
 
-.menu__button.is-open .icon-cross {
+.menu__button.is-open .icon-menu {
   display: block;
 }
 
-.menu__button.is-open .icon-menu {
+.menu__button.is-open .icon-cross {
   display: none;
 }
 
