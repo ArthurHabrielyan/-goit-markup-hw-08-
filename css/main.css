@@ -704,15 +704,19 @@ img {
   border: none;
 }
 
-.menu__button .icon-menu {
+.menu__button:hover, .menu__button:focus {
+  fill: #2196f3;
+}
+
+.menu__button .icon-cross {
   display: none;
 }
 
-.menu__button.is-open .icon-menu {
+.menu__button.is-open .icon-cross {
   display: block;
 }
 
-.menu__button.is-open .icon-cross {
+.menu__button.is-open .icon-menu {
   display: none;
 }
 
