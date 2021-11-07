@@ -15,12 +15,7 @@
             <a class="nav__logo" href="index.html" lang="en"
               >Web<span class="nav__span">Studio</span></a
             >
-            <button
-              type="button"
-              class="menu__button is-open"
-              aria-expanded="false"
-              data-menu-button
-            >
+            <button type="button" class="menu__button" data-menu-button>
               <svg
                 width="40"
                 height="40"
@@ -30,14 +25,14 @@
                 aria-label="Переключатель мобильного меню"
               >
                 <path
-                  class="icon-menu"
-                  d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
-                  fill="black"
-                />
-                <path
                   class="icon-cross"
                   d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z"
                   fill="#212121"
+                />
+                <path
+                  class="icon-menu"
+                  d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+                  fill="black"
                 />
               </svg>
             </button>
@@ -61,7 +56,7 @@
               <ul class="contacts-list">
                 <li class="contacts-list__item">
                   <a
-                    class="contacts-list__link"
+                    class="contacts-list__link-email"
                     href="mailto:info@devstudio.com"
                     ><svg class="contacts-list__icon">
                       <use
@@ -71,13 +66,27 @@
                   >
                 </li>
                 <li class="contacts-list__item">
-                  <a class="contacts-list__link" href="tel:+380961111111"
-                    ><svg class="contacts-list__icon">
+                  <a class="contacts-list__link-tel" href="tel:+380961111111"
+                    ><svg class="contacts-list__icon tel">
                       <use
                         href="./images/symbol-defs1.svg#icon-smartphone"
                       ></use></svg
                     >+38 096 111 11 11</a
                   >
+                </li>
+              </ul>
+              <ul class="network-list">
+                <li class="network-item">
+                  <a href="" class="network-link">Instagram</a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="network-link">Twitter</a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="network-link">Facebook</a>
+                </li>
+                <li class="network-item">
+                  <a href="" class="network-link">LinkedIn</a>
                 </li>
               </ul>
             </div>

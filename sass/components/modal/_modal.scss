@@ -2,13 +2,25 @@
   max-width: 528px;
   height: 609px;
   padding: 15px 15px 40px 15px;
-  position: relative;
   background-color: $modal-bcg;
-
   justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .modal__button {
@@ -51,6 +63,10 @@
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.5;
+  }
 }
 
 .fill-form {
@@ -175,7 +191,9 @@
 
 .fill-form__submit {
   margin: auto;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 200px;
   height: 50px;
