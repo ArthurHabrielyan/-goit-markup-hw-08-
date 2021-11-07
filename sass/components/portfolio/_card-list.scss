@@ -1,13 +1,12 @@
 .card-list {
-  display: flex;
-
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 .card-list__item {
-  width: 450px;
   border: $card-border;
   transition: box-shadow 250ms $timing-function;
 
@@ -15,6 +14,11 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
   }
 
   &:hover,
@@ -30,10 +34,6 @@
 .card-list__wrapper {
   position: relative;
   overflow: hidden;
-}
-
-.card-list__img {
-  min-width: 370;
 }
 
 .card-list__text {
