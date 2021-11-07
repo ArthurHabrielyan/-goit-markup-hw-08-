@@ -1,21 +1,29 @@
 .footer-form {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer-form__case {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 12px;
-  width: 100%;
+  display: block;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
+  }
 }
 
 .footer-form__text {
@@ -46,6 +54,10 @@
   @media screen and (min-width: 768px) {
     min-width: 450px;
   }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 350px;
+  }
 }
 
 .footer-form__button {
@@ -68,6 +80,11 @@
 
   &:hover {
     background-color: $hover-blue;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 34px;
+    margin-left: 12px;
   }
 }
 
