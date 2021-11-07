@@ -11,9 +11,15 @@
 }
 
 .function__list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 30px;
+  }
+
+  @media screen {
+    display: flex;
     margin: -15px;
     margin-top: 30px;
   }
@@ -34,6 +40,11 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 15px) / 4);
     margin: 15px;
   }
 }

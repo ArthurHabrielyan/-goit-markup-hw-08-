@@ -9,10 +9,17 @@
     flex-direction: column-reverse;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-left: 84px;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    margin-left: auto;
   }
 }
 
@@ -25,13 +32,20 @@
   }
 
   &:not(:last-child) {
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1199px) {
       margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }
 
-.contacts-list__link {
+.contacts-list__link-email,
+.contacts-list__link-tel {
   transition: color 250ms $timing-function;
 
   &:hover,
@@ -54,6 +68,12 @@
     line-height: 1.16;
     color: $grey-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .contacts-list__link-tel {
   @media screen and (max-width: 767px) {
@@ -69,6 +89,12 @@
     line-height: 1.16;
     color: $grey-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .contacts-list__icon {
@@ -83,22 +109,34 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 20px;
-    height: 20px;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+
+  &.tel {
+    @media screen and (max-width: 1199px) {
+      width: 10px;
+      height: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 10px;
+      height: 16px;
+    }
   }
 
   fill: $nav-contacts-color;
   transition: fill 250ms $timing-function;
 
-  .contacts-list__link:hover &,
-  .contacts-list__link:focus & {
+  .contacts-list__link-tel:hover &,
+  .contacts-list__link-tel:focus & {
     fill: $main-blue;
   }
-}
 
-.contacts-list__icon.tel {
-  @media screen and (min-width: 768px) {
-    width: 10px;
-    height: 14px;
+  .contacts-list__link-email:hover &,
+  .contacts-list__link-email:focus & {
+    fill: $main-blue;
   }
 }
