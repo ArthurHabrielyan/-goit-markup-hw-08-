@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     margin: -15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
 }
 
 .card-list__item {
@@ -24,9 +28,20 @@
     margin: 15px;
   }
 
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 15px * 6) / 3);
+    min-height: 404px;
+  }
+
   &:hover,
   &:focus {
     box-shadow: $card-shadow;
+  }
+}
+
+.card-list__img {
+  @media screen and (min-width: 1200px) {
+    min-height: 294px;
   }
 }
 

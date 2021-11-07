@@ -33,6 +33,10 @@
     display: flex;
     justify-content: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .section-btns__item {
