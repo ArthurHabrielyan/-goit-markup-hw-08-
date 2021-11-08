@@ -920,7 +920,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-list {
     margin-left: 84px;
     -webkit-box-orient: vertical;
